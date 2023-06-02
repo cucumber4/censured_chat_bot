@@ -69,10 +69,10 @@ while True:
 						if msg == 'Скажи что нибудь':
 							sender(id, f' ' + random.choice(open('chat_logs.txt').readlines()) + " " + random.choice(open('chat_logs.txt').readlines()))
 
-						if msg in ['Правила']:
-							sender(id, f'''1.Спам мут в последствии кик
+						if msg  == 'Правила':
+							sender(id, f'''1.Спам - мут, в последствии кик
 										   2.Все что считается рекламой по моему мнению бан
-										   3.Не доебывать и оскать администрацию
+										   3.Не оскорблять администрацию
 										   ''')
 
 						if msg in['кто я','сука кто я','бот кто я','как меня зовут','хто я']:
@@ -91,9 +91,8 @@ while True:
 						if msg in ['нет','ytn','нeт ']:
 							sender(id, f'  не неткай')
 
-						if msg == 'бот сколько я наберу на ент?':
-							sender(id, f' Ты наберешь на ент '+str(random.randint(0, 140))+' баллов')
-
+						if msg == 'Бот ент':
+							sender(id, f'  Ты наберешь на ент ' + str(random.randint(0, 140)) + ' баллов')
 
 						if msg == 'ладно':
 							sender(id, f'  прохладно')
